@@ -31,12 +31,10 @@ import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
 import TextTransformation from '@ckeditor/ckeditor5-typing/src/texttransformation';
 import CloudServices from '@ckeditor/ckeditor5-cloud-services/src/cloudservices';
 import Alignment from '@ckeditor/ckeditor5-alignment/src/alignment';
-import {Font,
-	FontBackgroundColor,
-	FontColor,
-	FontFamily,
-	FontSize
-} from '@ckeditor/ckeditor5-font';
+import 	Font from '@ckeditor/ckeditor5-font/src/font';
+import 	FontColor from '@ckeditor/ckeditor5-font/src/fontcolor';
+import 	FontFamily from '@ckeditor/ckeditor5-font/src/fontfamily';
+import 	FontSize from '@ckeditor/ckeditor5-font/src/fontsize';
 
 export default class ClassicEditor extends ClassicEditorBase {}
 
@@ -68,7 +66,6 @@ ClassicEditor.builtinPlugins = [
 	TextTransformation,
 	Alignment,
 	Font,
-	FontBackgroundColor,
 	FontColor,
 	FontFamily,
 	FontSize
@@ -94,7 +91,10 @@ ClassicEditor.defaultConfig = {
 			'insertTable',
 			'mediaEmbed',
 			'undo',
-			'redo'
+			'redo',
+			'fontSize',
+			'fontColor',
+			'fontFamily'
 		]
 	},
 	image: {
